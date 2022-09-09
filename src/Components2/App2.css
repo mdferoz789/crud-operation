@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  background-color: rgb(202, 235, 135);
+}
+button {
+  margin: 20px 0;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: red;
+}
+.h2 {
+  color: magenta;
+  font-size: 100px;
+}

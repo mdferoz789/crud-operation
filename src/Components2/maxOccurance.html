@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>occurance</title>
+  </head>
+  <body>
+    <h1>find max occurance in a string</h1>
+    <script>
+    //   let str = "hello ferozzz";
+    str=[1,2,3,4,5,6,8,7,5,66,55,4,8,9,7,8,4,8,8m]
+      console.log(str);
+      // console.clear()
+      let strObj = {};
+      maxKey = "";
+      for (let i = 0; i < str.length; i++) {
+        console.warn(str[i]);
+        let key = str[i];
+        if (!strObj[key]) {
+          strObj[key] = 0;
+        }
+        strObj[key]++;
+        if (maxKey =='' || strObj[key]>strObj[maxKey]){
+            maxKey=key
+        }
+    }
+    console.warn(strObj);
+    console.log(maxKey,"==>")
+    </script>
+  </body>
+</html>

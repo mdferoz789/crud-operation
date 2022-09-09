@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <script src="/Mapping.js"></script>
+  </head>
+  <body>
+    <h4 id="root1">n</h4>
+    <script>
+      const sweetArray = [2, 3, 4, 5, 35];
+      const sweeterArray = sweetArray.map((sweetItem) => {
+        return sweetItem * 2;
+      });
+      const sweeterArray1 = sweetArray.map((sweetItem) => {
+        return sweetItem + 2;
+      });
+      const sweeterArray2 = sweetArray.map((sweetItem) => {
+        return sweetItem / 2;
+      });
+      const sweeterArray3 = sweetArray.map((sweetItem) => {
+        return sweetItem - 2;
+      });
+
+      console.log(sweetArray);
+      console.log(sweeterArray, "***");
+      console.log(sweeterArray1, "+++");
+      console.log(sweeterArray2, "////");
+      console.log(sweeterArray3, "----");
+
+      document.write(sweeterArray);
+      const makeSweeter = (sweetItem) => sweetItem * 3;
+      const sweeterArrayShort = sweetArray.map(makeSweeter);
+      console.log(sweeterArrayShort);
+
+      //   ------------------------Array to String
+      const name = "Sammy";
+      const map = Array.prototype.map;
+
+      const newName = map.call(name, (eachLetter) => {
+        return `${eachLetter}`;
+      });
+
+      console.log(newName);
+    //   ---------------------
+    const myUsers = [
+    { name: 'shark', likes: 'ocean' },
+    { name: 'turtle', likes: 'pond' },
+    { name: 'otter', likes: 'fish biscuits' },
+    { name: 'abdul Fawwaz', likes: 'cute boy' }
+]
+
+const usersByLikes = myUsers.map(item => {
+    const container = {};
+
+    container[item.name] = item.likes;
+    container.age = item.name.length * 5;
+
+    return container;
+})
+
+console.table(usersByLikes);
+
+
+      
+    </script>
+  </body>
+</html>
